@@ -1,1 +1,4 @@
 # CollegeAssignment
+##HTML
+##CSS
+##JAVASCRIPT
