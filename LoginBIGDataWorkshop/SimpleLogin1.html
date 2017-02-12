@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Login</title>
+	<!--meta http-equiv="refresh" content="2"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--style type="text/css">
+		.left {
+			margin-left: 35%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 25px;
+		}
+
+		.disp-inherit-valign {			
+			display: inherit;
+			vertical-align: 30px;
+		}
+
+		#decl {
+			width: 35%; 
+			font-color:red; 
+			text-align: justify;
+			display: inline-block;
+			font-size: 25px;
+		}
+
+		.right {
+			margin-left: 80px
+			margin-top: 8px;
+			margin-bottom: 8px;
+			font-size: 25px;
+		}
+
+		.width-box {
+			width: 35%;
+		}
+
+		.title {
+			font-size: 30px;
+			text-align: center;
+		}
+
+		.theme-title {
+			background: steelblue;
+		}
+
+		.theme-body {
+			background: skyblue;
+		}
+
+		.button {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 25px;	
+			display: inherit;
+			vertical-align: 30px;
+    		background-color: white; 
+    		color: black; 
+    		border: 2px solid #008CBA;
+    		padding: 5px 20px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		cursor: pointer;
+    		transition-duration: 0.4s;
+		}
+
+		.button:hover {
+			background-color: #008CBA;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+
+		.title-text {
+			font-weight: bold;
+			color: #FFFFE0;
+		}
+	</style-->
+
+	<link rel="stylesheet" type="text/css" href="myLoginStyle.css">
+</head>
+<body>
+	<form name="signupForm" onsubmit = "return isValid()">
+		<div>
+			<div align="center" class="theme-title title-text" style="border: 0px; margin:0px; padding: 0px;">
+				<br>
+				<label class="title">One Day National Workshop with Hands-on</label><br>
+				
+				<label class="title">Session in</label><br>
+				
+				<label class="title">Big Data & Hadoop Technology</label><br>
+				
+				<label class="title">2nd March 2017</label>
+				<br><br><br>
+			</div>
+			<div class="theme-body" style="border: 0px; margin:0px; padding: 0px;">
+				<div class="theme-body" style="margin-left: 80px; padding-top: 20px; font-size: 25px">
+					<a href="index.html">Home</a>&nbsp; / SignUp
+				</div>
+			</div>
+			<div class="theme-body" style="border: 0px; margin:0px; padding: 0px;">
+				<br>
+
+				<label for="name" class="left disp-inherit-valign">Name</label>
+				<input type="text" name="name" id="name" class="left width-box" placeholder="Enter your Name">
+				&nbsp; &nbsp;<span id="namemsg" style="color: red"></span>
+
+				<label for="dob" class="left disp-inherit-valign">Date of Birth</label>			
+				<input type="text" name="dob" id="dob" class="left width-box" placeholder="Enter your Birth Date" onfocus="(this.type='date')">
+				&nbsp; &nbsp;<span id="dobmsg" style="color: red"></span>
+			
+				<label for="gender" class="left disp-inherit-valign">Gender</label>			
+				<div class="left width-box">
+					<input type="radio" name="gender" id="genderMale" value="male" > Male
+					<input type="radio" name="gender" id="genderFemale" value="female"> Female
+					&nbsp; &nbsp;<span id="gendermsg" style="color: red"></span>
+				</div>
+			
+				<label for="mobile" class="left disp-inherit-valign">Mobile No.</label>
+				<input type="text" name="mobile" id="mobile" class="left width-box" placeholder="Enter your Mobile No.">
+				&nbsp; &nbsp;<span id="mobilemsg" style="color: red"></span>
+				
+				<label for="email" class="left disp-inherit-valign">Email</label>			
+				<input type="email" name="email" id="email" class="left width-box" placeholder="Enter your Email">
+				&nbsp; &nbsp;<span id="emailmsg" style="color: red"></span>
+			
+				<label for="password" class="left disp-inherit-valign">Create a Password</label>			
+				<input type="password" name="password" id="password" class="left width-box" placeholder="Enter your password">
+				&nbsp; &nbsp;<span id="passwordmsg" style="color: red"></span>
+
+				<label for="confirmpassword" class="left disp-inherit-valign">Confirm Your Password</label>
+				<input type="password" name="confirmpassword" id="confirmpassword" class="left width-box" placeholder="Re-Enter your Password">
+				&nbsp; &nbsp;<span id="confirmpasswordmsg" style="color: red"></span>
+			
+				<label for="address" class="left width-box disp-inherit-valign">Mailing Address</label>
+				<textarea id="address" name="address" class="left width-box" rows="5" placeholder="Enter your Address" ></textarea>
+				&nbsp; &nbsp;<span id="addressmsg" style="color: red"></span>
+
+				<br>
+				<label for="payment" class="left disp-inherit-valign"><strong>Payment Details</strong></label>
+				<!--label for="amount" class="left" style="display: inline">Amount</label-->
+				<div class="left">
+					<input type="radio" name="payment" id="payment200" value="200" > Rs. 200/-
+					<input type="radio" name="payment" id="payment500" value="500"> Rs. 500/-
+					&nbsp; &nbsp;<span id="paymentmsg" style="color: red"></span>
+				</div>
+				<p id="typeInfo" class="left"></p>
+
+				<div>
+					<input type="checkbox" name="aggrement" id="aggrement" value="true" class="left disp-inherit-valign" style="display: inline;" >
+						<p id="decl">I here by declare the above information provided is true to the best of my knowledge.</p>
+						&nbsp; &nbsp;<span id="aggrementmsg" style="color: red"></span>
+					</input>
+				</div>		
+			
+
+				<div class="left" style="display: inline-block;">
+					<input type="submit" value="Submit" class="button">
+
+					<input type="reset" value="Reset" class="button">
+				</div>
+			</div>
+		</div>
+
+		<div align="center">
+		<hr>
+		<span>
+			<font size="3"><b>Copyright © 2017 ABHI, All Rights Reserved </b> </font>
+		</span>
+		<br>
+		<span>
+			<font size="3" align="right"> This website is constructed as the part of college assignment.</font>
+		</span>
+	</div>
+
+	</form>
+
+	<script type="text/javascript">
+		function isValid() {
+			
+			//Name Validation
+			var name = document.signupForm.name.value;
+			if(name == null || name == "") {
+				document.getElementById("namemsg").innerHTML = 
+				"<img src='img/fail.png' width=25px height=25px> Please enter your name";
+				return false;
+			} else {
+				document.getElementById("namemsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+			
+			//Date of Birth Validation
+			var dob = document.signupForm.dob.value;
+			if(!Date.parse(dob)) {
+				document.getElementById("dobmsg").innerHTML = "<img src='img/fail.png' width=25px height=25px> Please enter your birth date";
+				return false;
+			} else {
+				document.getElementById("dobmsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+			
+			//Gender Validation
+			if(!document.signupForm.genderMale.checked && !document.signupForm.genderFemale.checked) {
+				document.getElementById("gendermsg").innerHTML = "<img src='img/fail.png' width=25px height=25px> Please choose gender";
+				return false;
+			} else {
+				document.getElementById("gendermsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+			
+			//Mobile Validation
+			var mobile = document.signupForm.mobile.value;
+			if(mobile == null || mobile == "") {
+				document.getElementById("mobilemsg").innerHTML = 
+				"<img src='img/fail.png' width=25px height=25px> Please enter your Contact No.";
+				return false;
+			} else if (isNaN(mobile)) {
+				document.getElementById("mobilemsg").innerHTML = "<img src='img/fail.png' width=25px height=25px> Please enter valid Contact No.";
+				return false;
+			} else if(mobile.length != 10){
+				document.getElementById("mobilemsg").innerHTML = "<img src='img/fail.png' width=25px height=25px> Please enter 10 digit Contact No.";
+				return false;
+			} else {
+				console.log(mobile.length);
+				document.getElementById("mobilemsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+
+			//Email Validation
+			var email = document.signupForm.email.value;
+			if(email == null || email == "") {
+				document.getElementById("emailmsg").innerHTML = "<img src='img/fail.png' width=25px height=25px> Please enter your Email";
+				return false;
+			} else {
+				document.getElementById("emailmsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+			
+			//Password Validation
+			var password = document.signupForm.password.value;
+			if(password == null || password == "") {
+				document.getElementById("passwordmsg").innerHTML = 
+				"<img src='img/fail.png' width=25px height=25px> Please enter your password";
+				return false;
+			} else {
+				document.getElementById("passwordmsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+
+			//ConfirmPassword Validation
+			var confirmpassword = document.signupForm.confirmpassword.value;
+			if(confirmpassword == null || confirmpassword == "") {
+				document.getElementById("confirmpasswordmsg").innerHTML = 
+				"<img src='img/fail.png' width=25px height=25px> Please enter your password";
+				return false;
+			} else if( password != confirmpassword) {
+				document.getElementById("confirmpasswordmsg").innerHTML = 
+				"<img src='img/fail.png' width=25px height=25px> Your passwrod do not match";
+				return false;
+			} else {
+				document.getElementById("confirmpasswordmsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+
+			//Address Validation
+			var address = document.signupForm.address.value;
+			if(address == null || address == "") {
+				document.getElementById("addressmsg").innerHTML = 
+				"<img src='img/fail.png' width=25px height=25px> Please re-enter your password";
+				return false;
+			} else {
+				document.getElementById("addressmsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+
+			//Payment Validation
+			if(!document.signupForm.payment200.checked && !document.signupForm.payment500.checked) {
+				document.getElementById("paymentmsg").innerHTML = "<img src='img/fail.png' width=25px height=25px> Please choose payment";
+				return false;
+			} else {
+				document.getElementById("paymentmsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+
+			//Payment message
+			if(document.signupForm.payment200.checked) {
+				document.getElementById("typeInfo").innerHTML = "Your type is Student";
+			} else {
+				document.getElementById("typeInfo").innerHTML = "Your type is Faculty";	
+			}
+
+			//Aggrement Validation
+			if(!document.signupForm.aggrement.checked) {
+				document.getElementById("aggrementmsg").innerHTML = "<img src='img/fail.png' width=25px height=25px> Please check the aggrement";
+				return false;
+			} else {
+				document.getElementById("aggrementmsg").innerHTML = "<img src='img/success.png'  width=25px height=25px>"				
+			}
+			alert("You are successfully registered.")
+		}
+	</script>
+</body>
+</html>

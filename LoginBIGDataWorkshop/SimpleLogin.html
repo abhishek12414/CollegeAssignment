@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Login</title>
+	<!--meta http-equiv="refresh" content="2"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		.left {
+			margin-left: 35%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 25px;	
+			display: inherit;
+			vertical-align: 30px;
+		}
+
+		#decl {
+			width: 35%; 
+			font-color:red; 
+			text-align: justify;
+			display: inline-block;
+			font-size: 25px;
+		}
+
+		.right {
+			margin-left: 80px
+			margin-top: 8px;
+			margin-bottom: 8px;
+			font-size: 25px;
+		}
+
+		.width-box {
+			width: 35%;
+		}
+
+		.title {
+			font-size: 30px;
+			text-align: center;
+		}
+
+		.theme-title {
+			background: steelblue;
+		}
+
+		.theme-body {
+			background: skyblue;
+		}
+
+		.button {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 25px;	
+			display: inherit;
+			vertical-align: 30px;
+    		background-color: white; 
+    		color: black; 
+    		border: 2px solid #008CBA;
+    		padding: 5px 20px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		cursor: pointer;
+    		transition-duration: 0.4s;
+		}
+
+		.button:hover {
+			background-color: #008CBA;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+
+		.title-text {
+			font-weight: bold;
+			color: #FFFFE0;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div>
+			<div align="center" class="theme-title title-text" style="border: 0px; margin:0px; padding: 0px;">
+				<br>
+				<label class="title">One Day National Workshop with Hands-on</label><br>
+				
+				<label class="title">Session in</label><br>
+				
+				<label class="title">Big Data & Hadoop Technology</label><br>
+				
+				<label class="title">2nd March 2017</label>
+				<br><br><br>
+			</div>
+
+			<div class="theme-body" style="border: 0px; margin:0px; padding: 0px;">
+				<br>
+
+				<label for="name" class="left">Name</label>			
+				<input type="text" name="name" id="name" class="left width-box" placeholder="Enter your Name" required>
+			
+				<label for="dob" class="left">Date of Birth</label>			
+				<input type="text" name="dob" id="dob" class="left width-box" placeholder="Enter your Birth Date" onfocus="(this.type='date')" required>
+			
+				<label for="gender" class="left">Gender</label>			
+				<div class="left width-box">
+					<input type="radio" name="gender" id="gender" value="male" required> Male</option>
+					<input type="radio" name="gender" id="gender" value="female"> Female</option>
+				</div>
+			
+				<label for="mobile" class="left">Mobile No.</label>
+				<input type="text" name="mobile" id="mobile" class="left width-box" placeholder="Enter your Mobile No." required>
+				
+				<label for="email" class="left">Email</label>			
+				<input type="email" name="email" id="email" class="left width-box" placeholder="Enter your Email" required>
+			
+				<label for="password" class="left">Create a Password</label>			
+				<input type="password" name="password" id="password" class="left width-box" placeholder="Enter your password" required>
+
+				<label for="confirmpassword" class="left">Confirm Your Password</label>
+				<input type="password" name="confirmpassword" id="confirmpassword" class="left width-box" placeholder="Re-Enter your Password" required>
+			
+				<label for="address" class="left width-box">Mailing Address</label>
+				<textarea id="address" name="address" class="left width-box" rows="5" placeholder="Enter your Address" required></textarea>
+			
+				<br>
+				<label for="payment" class="left"><strong>Payment Details</strong></label>
+				<!--label for="amount" class="left" style="display: inline">Amount</label-->
+				<div class="left">
+					<input type="radio" name="payment" id="payment" value="200" required> Rs. 200/-</option>
+					<input type="radio" name="payment" id="payment" value="500"> Rs. 500/-</option>
+					<p></p>
+				</div>
+
+				<div>
+					<input type="checkbox" name="aggrement" id="aggrement" value="true" class="left" style="display: inline;" required>
+						<p id="decl">I here by declare the above information provided is true to the best of my knowledge.</p>
+					</input>	
+				</div>		
+			
+
+				<div  class="left" style="display: inline-block;">
+					<input type="submit" value="Submit" class="button">
+					<input type="reset" value="Reset" class="button">
+				</div>
+			</div>
+		</div>
+
+		<div align="center">
+		<hr>
+		<span>
+			<font size="3"><b>Copyright © 2017 ABHI, All Rights Reserved </b> </font>
+		</span>
+		<br>
+		<span>
+			<font size="3" align="right"> This website is constructed as the part of college assignment.</font>
+		</span>
+	</div>
+
+	</form>
+</body>
+</html>

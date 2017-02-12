@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appointment</title>
+</head>
+<body>
+	<form>
+	<table cellspacing="5px" cellpadding="10px" border="0" bgcolor ="#778899" width="100%">
+		<tr>
+			<td rowspan="8" width="600px" align="center">
+				<img src="img/appointment/a1.png" width="400px" height="auto">
+			</td>
+			<td rowspan="8" width="80px"></td>
+			<td colspan="2">
+				<font size="12px" color="#A52A2A">Make An Appointment</font>
+			</td>
+			<td rowspan="8" width=23px></td>
+		</tr>
+		<tr>
+			<td>
+				<label for="date">Date</label>
+			</td>
+			<td>
+				<input type="date" placeholder="Appointment Date" id="appointementdate" size="21px" required>
+				<!--input type="date" placeholder="Appointment Date" id="appointementdate" onfocus="(this.type='date')" size="21px" required-->
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label for="Name">Name</label>
+			</td>
+			<td>
+				<input type="text" name="name" id="name" placeholder="Name" size="21px" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="email">Email</label>
+			</td>
+			<td>
+				<input type="email" name="email" id="email" placeholder="Email" size="21px" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="mobile">Mobile</label>
+			</td>
+			<td>
+				<input type="text" name="mob" id="mob" placeholder="Mobile" size="21px" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="category">Category</label>
+			</td>
+			<td>
+				<select name="category" required>
+					<option value="" selected="selected">Depertment         </option>
+					<option value="Surgery">Surgery &amp; Transplants</option>
+					<option value="Emergancy">Emergancy / Critical Care</option>
+					<option value="Gynaecological">Gynaecological Clinic</option>
+					<option value="Accident">Accident Injuries</option>
+					<option value="Outpatient">Outpatient Rehabilitation</option>
+					<option value="Other">Other</option>
+				</select>
+			</td>
+		</tr>		
+		<tr>
+			<td>
+				<label for="message">Message</label>
+			</td>
+			<td>
+				<textarea rows="6" cols="30" placeholder="Message" id="message" name="message"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="left">
+				<input type="submit" name="submit" value="Send Message">
+			</td>
+		</tr>
+	</table>
+	</form>
+
+	<!-- Footer Message -->
+	<div align="center">
+		<hr>
+		<span>
+			<font size="3"><b>Copyright © 2017 ABHI, All Rights Reserved </b> </font>
+		</span>
+		<br>
+		<span>
+			<font size="3" align="right"> This website is constructed as the part of college assignment.</font>
+		</span>
+	</div>
+</body>
+</html>

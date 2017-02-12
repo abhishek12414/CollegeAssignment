@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AB Group of Hotels - Room Booking</title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="body">
+
+	<!-- Company Logo and Menu Items -->
+	<div class="menu-area" width="400px">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="index.html"><img class ="company-logo" src="img/company-logo/Abhi-40.png" width="40px" height="auto"></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<label class="company-name">AB Group of Hotels</label>
+		
+		<div align="right" style="font-size: 20px" position=absolute style="top: 10px; right:10px; ">
+			<a class="anchor-style" href="index.html">Home</a> &nbsp;&nbsp;&nbsp;
+			<a class="anchor-style" href="room-list.html">Rooms & Tariff</a> &nbsp;&nbsp;&nbsp;
+			<a class="anchor-style" href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;
+			<a class="anchor-style" href="contact.html">Contact</a> &nbsp;&nbsp;
+			<a class="anchor-nostyle" href="booking-form.html"> <button class="button-style">Book Online</button> </a>
+		</div>
+	</div>
+
+	<!-- Navigation View -->
+	<div id="title-area">
+		<div id="naviagation-view">
+			<h1> Booking Form </h1>
+			<h4> <a href="index.html" class="anchor-style">Home</a>  /  <span class=" navigation-font-link"> BookingForm </span> </h4>
+		</div>
+	</div>
+
+	<!-- Booking Form -->
+	<div>
+		<form>
+			<table align="center" class="table-style" border="0">
+				<tr>
+					<td colspan="2"><h1 class="header-color">BOOK ONLINE</h1> </td>
+					<td room-type="17" width=20px></td>
+					<td rowspan="17">
+						<!-- Special offer sidebar -->
+						<table>
+							<tr>
+								 <td align="center"> <h1 class="header-color">SPECIAL OFFERS</h1> </td>
+							</tr>
+							<tr>
+								<td>
+									<div class="price">										
+										Rs. 6443.18 <span> / Night </span>										
+									</div>
+									<div class="price message">										
+										<span> Family Room </span>										
+									</div>
+									<img src="img/special-offer/special1.jpeg" width="500px" height="auto">
+									
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="price">										
+										Rs. 8339.00 <span> / Night </span>										
+									</div>
+									<div class="price message">										
+										<span> Double Room </span>										
+									</div>
+									<img src="img/special-offer/special2.jpeg" width="500px" height="auto">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="price">										
+										Rs. 12682.72 <span> / Night </span>										
+									</div>
+									<div class="price message">										
+										<span> Delux Room </span>										
+									</div>
+									<img src="img/special-offer/special3.jpeg" width="500px" height="auto">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label for="name" class="label-style">Name</label>
+					</td>
+					<td>
+						<label for="email" class="label-style">Email Address</label>
+					</td>					
+				</tr>
+
+				<tr>
+					<td>
+						<input type="text" class="input-style" name="name" id="name" placeholder="  Your Name" required>
+					</td>					
+					<td>
+						<input type="email" class="input-style" name="email" id="email" placeholder="  Your Email Address" required>
+					</td>					
+				</tr>
+
+				<tr>
+					<td>
+						<label for="phone-number" class="label-style">Phone Number</label>
+					</td>
+					<td>
+						<label for="country" class="label-style">Country</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" class="input-style" name="phone-number" id="phone-number" placeholder="  Your Phone Number" required>
+					</td>					
+					<td>
+						<select class="selectbox-style" id="country" name="country" placeholder="  Select Your Country" required>
+							<option value="India">India</option>
+							<option value="Afganistan">Afghanistan</option>
+							<option value="Bangladesh">Bangladesh</option>
+							<option value="Bhutan">Bhutan</option>
+							<option value="Nepal">Nepal</option>
+							<option value="Singapore">Singapore</option>
+							<option value="Saudi Arabia">Saudi Arabia</option>
+							<option value="Sri Lanka">Sri Lanka</option>
+							<option value="Hong Kong">Hong Kong</option>
+							<option value="New Zealand">New Zealand</option>				
+							<option value="China">China</option>
+							<option value="Switzerland">Switzerland</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="arrival-date" class="label-style">Arrival</label>
+					</td>
+					<td>
+						<label for="depature-date" class="label-style">Depature</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" class="input-style" placeholder="  Arrival Date" id="arrival-date"  Depature Date" onfocus="(this.type='date')" required>
+						<!--input type="date" name="arrival-date" id="arrival" placeholder="  Arrival Date"-->
+					</td>
+					<td>
+						<input type="text" class="input-style" placeholder="  Depature Date" id="depature-date" onfocus="(this.type='date')" required>
+						<!--input type="date" name="depature-date" id="depature" placeholder="  Depature Date"-->
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="adults" class="label-style">Adults</label>
+					</td>
+					<td>
+						<label for="childrens" class="label-style">Childrens</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<select class="selectbox-style" required id="adults">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+					<td>
+						<select class="selectbox-style" required id="childrens">
+							<option value="1">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="room-type" class="label-style">Room Type</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<select id="room-type" class="selectbox-style" required>
+							<option value="single room">Single Room</option>
+							<option value="double room-with sider">Double Room - With Sider</option>
+							<option value="delux room">Delux Room</option>
+							<option value="king room">King Room</option>
+							<option value="honeymoon room">Honeymoon Room</option>
+							<option value="family room">Family Room</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="your-comments" class="label-style">Your Comments</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea class="input-style textarea-style" placeholder="  Your Comments..." id="your-comments" class="textarea" rows="6"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<input type="submit" class="button-style" name="submit" value="Book A Room Now">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<!-- Footer Message -->
+	<div align="center">
+		<hr>
+		<span>
+			<font size="3"><b>Copyright © 2017 ABHI, All Rights Reserved </b> </font>
+		</span>
+		<br>
+		<span>
+			<font size="3" align="right"> This website is constructed as the part of college assignment.</font>
+		</span>
+	</div>
+
+</body>
+</html>

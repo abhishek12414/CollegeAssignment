@@ -1,0 +1,84 @@
+	.left {
+		margin-left: 35%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 25px;
+	}
+
+	.disp-inherit-valign {
+		display: inherit;
+		vertical-align: 30px;
+	}
+
+	#decl {
+		width: 35%; 
+		font-color:red; 
+		text-align: justify;
+		display: inline-block;
+		font-size: 25px;
+	}
+
+	.right {
+		margin-left: 80px
+		margin-top: 8px;
+		margin-bottom: 8px;
+		font-size: 25px;
+	}
+
+	.width-box {
+		width: 35%;
+	}
+
+	.title {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.theme-title {
+		background: steelblue;
+	}
+
+	.theme-body {
+		background: skyblue;
+	}
+
+	.button {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 25px;	
+		display: inherit;
+		vertical-align: 30px;
+   		background-color: white; 
+   		color: black; 
+   		border: 2px solid #008CBA;
+   		padding: 5px 20px;
+   		text-align: center;
+   		text-decoration: none;
+   		display: inline-block;
+   		cursor: pointer;
+   		transition-duration: 0.4s;
+   		width: 120px;
+	}
+
+	.button:hover {
+		background-color: #008CBA;
+		color: white;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+
+	.title-text {
+		font-weight: bold;
+		color: #FFFFE0;
+	}
+
+	a:hover {
+    	color: red;
+    	background-color: transparent;
+    	text-decoration: none;
+	}
+
+	a {
+    	color: blue;
+    	background-color: transparent;
+    	text-decoration: none;
+	}
